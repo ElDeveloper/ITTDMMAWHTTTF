@@ -1,2 +1,6 @@
 language: objective-c
+before_install:
+- brew unlink xctool
+- brew update
+- brew install xctool
 script: xctool -scheme ITTDMMAWHTTTF test -sdk iphonesimulator -project ITTDMMAWHTTTF.xcodeproj
