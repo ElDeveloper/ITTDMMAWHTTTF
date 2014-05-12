@@ -1,6 +1,8 @@
 ITTDMMAWHTTTF
 =============
 
+[![Build Status](https://travis-ci.org/ElDeveloper/ITTDMMAWHTTTF.svg?branch=master)](https://travis-ci.org/ElDeveloper/ITTDMMAWHTTTF)
+
 Is today the Day Marty McFly arrives when he travels to the future?
 
 Inspired by:
