@@ -11,4 +11,4 @@ Screenshot
 ==========
 
 *taken on May 12, 2014*
-[Imgur](http://i.imgur.com/Qi9c72g.png)
+![Imgur](http://i.imgur.com/Qi9c72g.png)
