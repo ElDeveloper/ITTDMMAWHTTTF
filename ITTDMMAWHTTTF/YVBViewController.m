@@ -8,16 +8,18 @@
 
 #import "YVBViewController.h"
 
-@interface YVBViewController ()
-
-@end
+#import "YVBDateChecker.h"
 
 @implementation YVBViewController
+
+@synthesize resultLabel=_resultLabel;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	YVBDateChecker *lol = [[YVBDateChecker alloc] init];
+	[_resultLabel setText:[lol getResult] ? @"YES" : @"NO"];
 }
 
 - (void)didReceiveMemoryWarning
