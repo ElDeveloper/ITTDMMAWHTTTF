@@ -15,5 +15,6 @@
 
 @property (atomic, readonly) BOOL result;
 -(BOOL)getResult;
+-(BOOL)_checkDateForDate:(NSDate *)date;
 
 @end
