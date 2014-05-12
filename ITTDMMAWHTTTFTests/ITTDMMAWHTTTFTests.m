@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "YVBDateChecker.h"
 
 @interface ITTDMMAWHTTTFTests : XCTestCase
 
@@ -26,9 +27,37 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testTheDate
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    YVBDateChecker *checker = [[YVBDateChecker alloc] init];
+
+	NSDate *theDate;
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setTimeStyle:NSDateFormatterNoStyle];
+	[formatter setDateFormat:@"MM/dd/yyyy"];
+
+	// http://www.october212015.com
+	// http://istodaythedaymartymcflyarriveswhenhetravelstothefuture.com
+	theDate = [formatter dateFromString:@"10/25/2015"];
+
+	XCTAssertTrue([checker _checkDateForDate:theDate], @"Test was correctly computed");
 }
+
+- (void)testOtherDate
+{
+    YVBDateChecker *checker = [[YVBDateChecker alloc] init];
+
+	NSDate *theDate;
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setTimeStyle:NSDateFormatterNoStyle];
+	[formatter setDateFormat:@"MM/dd/yyyy"];
+
+	// http://www.october212015.com
+	// http://istodaythedaymartymcflyarriveswhenhetravelstothefuture.com
+	theDate = [formatter dateFromString:@"11/11/2011"];
+
+	XCTAssertFalse([checker _checkDateForDate:theDate], @"The date is indeed correct");
+}
+
 
 @end
