@@ -21,6 +21,7 @@
 		50D340F519209B8D006565BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D340D719209B8D006565BD /* UIKit.framework */; };
 		50D340FD19209B8D006565BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50D340FB19209B8D006565BD /* InfoPlist.strings */; };
 		50D340FF19209B8D006565BD /* ITTDMMAWHTTTFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D340FE19209B8D006565BD /* ITTDMMAWHTTTFTests.m */; };
+		50D3410A19209D7C006565BD /* YVBDateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D3410919209D7C006565BD /* YVBDateChecker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		50D340FA19209B8D006565BD /* ITTDMMAWHTTTFTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ITTDMMAWHTTTFTests-Info.plist"; sourceTree = "<group>"; };
 		50D340FC19209B8D006565BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50D340FE19209B8D006565BD /* ITTDMMAWHTTTFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITTDMMAWHTTTFTests.m; sourceTree = "<group>"; };
+		50D3410819209D7C006565BD /* YVBDateChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVBDateChecker.h; sourceTree = "<group>"; };
+		50D3410919209D7C006565BD /* YVBDateChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVBDateChecker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				50D340E519209B8D006565BD /* Main.storyboard */,
 				50D340E819209B8D006565BD /* YVBViewController.h */,
 				50D340E919209B8D006565BD /* YVBViewController.m */,
+				50D3410819209D7C006565BD /* YVBDateChecker.h */,
+				50D3410919209D7C006565BD /* YVBDateChecker.m */,
 				50D340EB19209B8D006565BD /* Images.xcassets */,
 				50D340DA19209B8D006565BD /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				50D340EA19209B8D006565BD /* YVBViewController.m in Sources */,
 				50D340E419209B8D006565BD /* YVBAppDelegate.m in Sources */,
 				50D340E019209B8D006565BD /* main.m in Sources */,
+				50D3410A19209D7C006565BD /* YVBDateChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
