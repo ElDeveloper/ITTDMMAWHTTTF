@@ -28,7 +28,7 @@
 
 	// http://www.october212015.com
 	// http://istodaythedaymartymcflyarriveswhenhetravelstothefuture.com
-	theDate = [formatter dateFromString:@"10/25/2015"];
+	theDate = [formatter dateFromString:@"10/21/2015"];
 
 	if ([theDate compare:date] == NSOrderedSame){
 		return YES;

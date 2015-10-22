@@ -38,7 +38,7 @@
 
 	// http://www.october212015.com
 	// http://istodaythedaymartymcflyarriveswhenhetravelstothefuture.com
-	theDate = [formatter dateFromString:@"10/25/2015"];
+	theDate = [formatter dateFromString:@"10/21/2015"];
 
 	XCTAssertTrue([checker _checkDateForDate:theDate], @"Test was correctly computed");
 }
